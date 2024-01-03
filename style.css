@@ -321,3 +321,57 @@ nav ul li{
 	background-image: url('img/more_bg.webp');
 }
 
+.contact-form {
+	max-width: 600px;
+	margin: 0 auto;
+	background: linear-gradient(to right, #fff, #f5f5f5);
+	border: 1px solid #ddd;
+	border-radius: 8px;
+	padding: 20px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+	transition: transform 0.3s, box-shadow 0.3s;
+	text-align: left;
+}
+
+.contact-form label {
+	display: block;
+	margin-bottom: 8px;
+	font-weight: bold;
+}
+
+.contact-form input,
+.contact-form textarea {
+	width: 100%;
+	padding: 10px;
+	margin-bottom: 16px;
+	border: 1px solid #ddd;
+	border-radius: 4px;
+	box-sizing: border-box;
+	transition: border-color 0.3s;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+	border-color: #17516D;
+}
+
+.contact-form button {
+	background-color: #db1773;
+	color: #fff;
+	padding: 10px 20px;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+	transition: background-color 0.3s;
+}
+
+.contact-form button:hover {
+	background-color: #d10e97;
+}
+
+.contact-form:hover {
+	transform: scale(1.02);
+	box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+
