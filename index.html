@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Website</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+		<div class="bottom_header">
+			<nav class="navbar navbar-expand-lg navbar-light bg-light">
+				<div class="container p-3">
+					<a class="navbar-brand" href="#"> Webwave HR</a>
+					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+					<div class="collapse navbar-collapse" id="navbarSupportedContent">
+						<ul class="navbar-nav ml-auto font-weight-bold">
+                            <li class="nav-item active">
+							<a onclick="showPage('home')">Home</a>
+                            </li>
+							
+                            <li class="nav-item active">
+							
+                            <a onclick="showPage('services')">Services</a>
+                        </li>
+							
+                            <li class="nav-item active">
+							
+                            <a onclick="showPage('about')">About Us</a>
+							
+                        </li>
+                        <li class="nav-item active">
+							
+                            <a onclick="showPage('contact')">Contact Us</a>
+						
+                        </li>
+                    </ul>
+
+					</div>
+				</div>
+				
+			</nav>
+		</div>
+	</header>
+
+    <nav>
+          </nav>
+
+    <section id="home" class="active">
+        <div class="main">
+            <div class="main_content container">
+                <div class="row">
+                    <div class="col-md-7">
+                        <h5 class="text-uppercase ">committed to success</h5>
+                        <h1 class="">We help to grow your business</h1>
+                        <p>
+                           
+                        </p>
+                        <button class="btn btn-lg btn_style text-uppercase animate_btn">
+                            <a onclick="showPage('services')">our services</a>
+                           
+                        </button>
+                    </div>
+                </div>
+                
+            </div>		
+        </div>
+        
+    </section>
+
+    <section id="services">
+        <div class="services bg-light">
+            <div class="container">
+                <h5>OUR TOP SERVICES</h5>
+                <h1>Our Best Services</h1>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card">
+                            <div class="card-body">
+                                <div><i class="fa fa-cogs fa-5x" aria-hidden="true"></i>
+                                </div>
+                                <h4>strategy planning</h4>
+                                <p> data 1</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <div class="card-body">
+                                <div><i class="fa fa-object-group fa-5x " aria-hidden="true"></i>
+                                </div>
+                                <h4>Insurance Service</h4>
+                                <p> There are many variations of passages of lorem Ipsum available but the new majority have suffered.
+    
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <div class="card-body">
+                                <div><i class="fa fa-handshake-o fa-5x " aria-hidden="true"></i>
+                                </div>
+                                <h4>Audit & Evaluation</h4>
+                                <p>There are many variations of passages of lorem Ipsum available but the new majority have suffered.
+    
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <h2>About Us</h2>
+        <p>Provide information about your company.</p>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Include contact information and a form here.</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Webwave HR. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function showPage(pageId) {
+            // Hide all sections
+            document.querySelectorAll('section').forEach(section => {
+                section.classList.remove('active');
+            });
+
+            // Show the selected section
+            document.getElementById(pageId).classList.add('active');
+        }
+    </script>
+
+</body>
+</html>
