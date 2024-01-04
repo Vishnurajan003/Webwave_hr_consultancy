@@ -373,5 +373,52 @@ nav ul li{
 	transform: scale(1.02);
 	box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
 }
+.custom-color {
+	background-color: hwb(330 6% 17%); /* Rose background color */
+}
+/* Custom styles go here header css*/
+.custom-header {
+	background-color: #474546; /* Rose background color */
+	padding: 10px 0;
+}
 
+.contact-info {
+	color: #fff; /* White text color */
+	display: flex;
+	align-items: center;
+}
 
+.contact-info p {
+	margin: 0;
+}
+.company-logo img {
+	max-width: 100px; /* Adjust the maximum width of the logo */
+}
+.contact-info p:not(:last-child) {
+	margin-right: 20px;
+}
+/*footer*/
+.footer-list li {
+	margin-bottom: 8px;
+  }
+  .social-icons {
+	font-size: 24px;
+	margin-top: 10px;
+  }
+  .social-icons a {
+	color: #fff;
+	margin-right: 15px;
+  }
+  .copyright {
+	margin-top: 20px;
+  }
+  h4 {
+	font-weight: bold;
+	
+  }
+  .justify-content {
+	text-align: justify;
+  }
+  .footer-list a {
+	text-decoration: none;
+  }
