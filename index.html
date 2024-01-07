@@ -2,41 +2,63 @@
 <html lang="en">
 
 <head>
+
+     <!-- Meta Tags -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- title start -->
     <title>Webwave HR </title>
+
+    <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> 
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+
+    <!-- Popper JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha384-QwOMLg/DRzR3gRXUpuAT45V2h1O/RSRwilPw8b8+/CqmkNweheMHpvLhz9ACxI4D" crossorigin="anonymous">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"> <!-- Font Awesome CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"> 
+    
+    <!-- Font Awesome CSS -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
-        integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- style css -->
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-   
+
+  
+   <!-- Header Section -->
     <header class="custom-header">
         <div class="container">
             <div class="row">
                 <div class="col-md-6 text-left contact-info">
                     <p class="mb-0"><i class="fas fa-phone"></i> +9199888888</p>
                     <p><i class="fas fa-envelope"></i> infosupporthr@gmail.com</p>
-                </div>
-               
+                </div>    
                 <div class="col-md-6 text-right company-logo">
-                    <!-- Replace the following image source with your logo -->
                     <img src="img/2.png" alt="Webwave">
                 </div>
             </div>
         </div>
     </header>
+<!-- Header section end -->
 
+
+<!-- Nav bar section -->
     <div class="bottom_header">
         <nav class="navbar navbar-expand-lg navbar-light custom-color">
             <div class="container p-3">
@@ -45,41 +67,40 @@
                     data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
-
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ml-auto font-weight-bold">
                         <li class="nav-item active">
                             <a onclick="showPage('home')">Home</a>
                         </li>
-
                         <li class="nav-item active">
-
                             <a onclick="showPage('services')">Services</a>
                         </li>
-
                         <li class="nav-item active">
-
                             <a onclick="showPage('about')">About Us</a>
-
                         </li>
                         <li class="nav-item active">
-
+                          <a onclick="showPage('What we do')">What we do</a>
+                      </li>
+                        <li class="nav-item active">
                             <a onclick="showPage('contact')">Contact Us</a>
-
                         </li>
-
-
+                        <li class="nav-item active">
+                          <a onclick="showPage('Jobs')">Jobs</a>
+                      </li>
+                      <li class="nav-item active">
+                        <a onclick="showPage('FAQ')">FAQ</a>
+                    </li>
                     </ul>
-
                 </div>
             </div>
-
         </nav>
     </div>
-    <nav>
-    </nav>
 
+<!-- Nav bar section end -->
+
+
+<!-- Home section -->
 <section id="home" class="active">
   <div class="main">
       <div class="main_content container">
@@ -87,21 +108,19 @@
               <div class="col-md-7">
                   <h5 class="text-uppercase ">committed to success</h5>
                   <h1 class="">We help to grow your business</h1>
-                  <p>
-                     
-                  </p>
+                  <p> </p>
                   <button class="btn btn-lg btn_style text-uppercase animate_btn">
                       <a onclick="showPage('services')">our services</a>
-                     
                   </button>
               </div>
           </div>
-          
       </div>		
   </div>
-  
 </section>
+<!-- Home section end -->
 
+
+<!-- Service section start -->
 <section id="services">
   <div class="services bg-light">
       <div class="container">
@@ -146,12 +165,26 @@
       </div>
   </div>
 </section>
+<!-- Service section end -->
 
+
+<!-- About section start -->
 <section id="about">
   <h2>About Us</h2>
   <p>Provide information about your company.</p>
 </section>
+<!-- About section end-->
 
+
+<!-- What we do section start -->
+<section id="What we do">
+  <h2>What we do</h2>
+  <p>Provide information about your company.</p>
+</section>
+<!-- What we do section end-->
+
+
+<!-- Contact section start -->
 <section id="contact">
   <h2>Contact Us</h2>
   <div class="contact-form">
@@ -169,7 +202,26 @@
       </form>
   </div>
 </section>
+<!-- Contact section end -->
 
+
+<!-- Jobs section start -->
+<section id="Jobs">
+  <h2>Jobs</h2>
+  <p>Provide information about your company.</p>
+</section>
+<!-- Jobs section end-->
+
+
+<!-- FAQ section start -->
+<section id="FAQ">
+  <h2>FAQ</h2>
+  <p>Provide information about your company.</p>
+</section>
+<!-- FAQ section end-->
+
+
+<!-- Footer area starts -->
     <div class="container-fluid">
         <footer class="py-3 bg-dark text-white">
           <div class="row">
@@ -182,7 +234,7 @@
                   <h4>Company</h4>
                   <ul class="list-unstyled footer-list">
                     <li><a href="#">About us</a></li>
-                    <li><a href="#">Who we are</a></li>
+                    <li><a href="#">What we do </a></li>
                     <li><a href="#">Jobs</a></li>
                   </ul>
                 </div>
@@ -217,6 +269,8 @@
           </div>
         </footer>
       </div>
+<!-- Footer area end -->
+
 
     <script>
         function showPage(pageId) {
@@ -229,12 +283,7 @@
             document.getElementById(pageId).classList.add('active');
         }
     </script>
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
 </body>
 
 </html>
