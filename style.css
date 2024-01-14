@@ -5,16 +5,38 @@ body {
 }
 
 header, footer {
-	background-color: #333;
+	background-color: hsl(0, 3%, 38%);
 	color: white;
 	text-align: center;
 	padding: 10px;
 }
 
 nav {
-	background-color: #444;
+	background-color: #0e0c0c;
 	overflow: hidden;
-}
+	background: linear-gradient(45deg, #3498db, #9b59b6, #e74c3c, #f39c12);
+      background-size: 400% 400%;
+      animation: gradientAnimation 5s infinite;
+      height: 50px;
+      text-align: center;
+      color: white;
+      line-height: 50px;
+    }
+
+    @keyframes gradientAnimation {
+      0% {
+        background-position: 0% 50%;
+      }
+      50% {
+        background-position: 100% 50%;
+      }
+      100% {
+        background-position: 0% 50%;
+      }
+    }
+	
+	
+
 
 nav a {
 	float: left;
@@ -82,12 +104,13 @@ nav ul li{
 .main{
 	width: 100%;
 	height: 100vh;
-	background-image: url('img/main_img.webp');
+	
 	background-size: 100% 100%;
 	background-position: center;
 	display: flex;
 	justify-content: center;
 	align-items: center;
+
 }
 .main .main_content{
  margin-right: 30px;
@@ -214,7 +237,7 @@ nav ul li{
 }
 
 .top_services{
-	background-image: url('img/img.webp');
+	
 	background-size: 100% 100%;
 	background-repeat: no-repeat;
 	background-position: center;
@@ -318,8 +341,10 @@ nav ul li{
 	width: 100%;
 	height: 301px;
 	background-size: 100% 100%;
-	background-image: url('img/more_bg.webp');
+	
 }
+
+/* Contact form */
 
 .contact-form {
 	max-width: 600px;
@@ -366,7 +391,7 @@ nav ul li{
 }
 
 .contact-form button:hover {
-	background-color: #d10e97;
+	background-color:#ff2143;
 }
 
 .contact-form:hover {
@@ -374,12 +399,13 @@ nav ul li{
 	box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
 }
 .custom-color {
-	background-color: hwb(330 6% 17%); /* Rose background color */
+	background-color: hsl(351, 67%, 56%); /* Rose background color */
 }
 /* Custom styles go here header css*/
 .custom-header {
-	background-color: #474546; /* Rose background color */
+	background-color: hwb(0 49% 49%); /* Rose background color */
 	padding: 10px 0;
+	
 }
 
 .contact-info {
@@ -391,12 +417,20 @@ nav ul li{
 .contact-info p {
 	margin: 0;
 }
+
+.contact-info:hover {
+	text-decoration: underline;
+	transform: scale(1.02);
+    
+  }
+
 .company-logo img {
 	max-width: 100px; /* Adjust the maximum width of the logo */
 }
 .contact-info p:not(:last-child) {
 	margin-right: 20px;
 }
+
 /*footer*/
 .footer-list li {
 	margin-bottom: 8px;
@@ -421,4 +455,100 @@ nav ul li{
   }
   .footer-list a {
 	text-decoration: none;
+	animation: fadeIn 1s forwards;
+  }
+
+/*  card */
+
+  .card {
+	width: 1200px;
+	box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+	transition: transform 0.3s;
+	
+	 /* Set the desired width for the card */
+  }
+
+  .custom-card img {
+	max-width: 100%; /* Set the maximum width of the image to 100% */
+	height: auto;    /* Maintain the aspect ratio */
+  }
+
+  .card:hover {
+    transform: scale(1.02);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  }
+
+/* We Serve at section */
+
+  .main-box {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	background: rgba(76, 175, 80, 0.6);
+	opacity: 0.8;
+	width: 1300px;
+	height: 550px;
+	background-color: #fafdfd;
+	margin: 25px;
+	padding: 5px;
+	box-sizing: border-box;
+	box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+	transition: transform 0.3s;
+	
+	
+  }
+
+  .main-box:hover {
+    transform: scale(1.02);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  }
+
+  /* Content box in we serve at section */
+
+  .sub-box {
+	flex: 1;
+	background-color: #f35858;
+	margin: 15px;
+	padding: 5px;
+	border: 2px solid;
+	box-sizing: border-box;
+	height: 100px;
+	width: 500px;
+	display: flex;
+	align-items: center;
+	margin-left: auto;
+    margin-right: auto;
+	justify-content: center;
+  }
+
+  .sub-box:hover {
+    transform: scale(1.02);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  }
+
+  /* Background template */
+  body {
+	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+	height: 1vh;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+/* Home page images */
+
+.carousel-inner img {
+    width: 100%;
+    height: 80vh;
   }
