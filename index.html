@@ -6,12 +6,16 @@
      <!-- Meta Tags -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
 
     <!-- title start -->
     <title>Webwave HR </title>
 
+    <link rel="shortcut icon" href="/images/favicon.ico">
+    
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/dist/bootsnipp.min.css">
 
     <!-- jQuery library -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> 
@@ -36,10 +40,14 @@
 
     <!-- style css -->
     <link rel="stylesheet" href="style.css">
+    <div class="d-flex flex-column justify-content-center w-100 h-100">
+  
+    </div>
+     
+    </div>
 </head>
 
 <body>
-
   
    <!-- Header Section -->
     <header class="custom-header">
@@ -57,12 +65,17 @@
     </header>
 <!-- Header section end -->
 
+<main id="imageGallery">
+  <!-- Images will be dynamically added here -->
+</main>
+
+
 
 <!-- Nav bar section -->
     <div class="bottom_header">
         <nav class="navbar navbar-expand-lg navbar-light custom-color">
             <div class="container p-3">
-                <a class="navbar-brand" href="#"> Webwave HR</a>
+               
                 <button class="navbar-toggler" type="button" data-toggle="collapse"
                     data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
@@ -82,6 +95,9 @@
                         <li class="nav-item active">
                           <a onclick="showPage('What we do')">What we do</a>
                       </li>
+                      <li class="nav-item active">
+                          <a onclick="showPage('Serve')">We Serve at</a>
+                      </li>
                         <li class="nav-item active">
                             <a onclick="showPage('contact')">Contact Us</a>
                         </li>
@@ -100,25 +116,109 @@
 <!-- Nav bar section end -->
 
 
-<!-- Home section -->
-<section id="home" class="active">
-  <div class="main">
-      <div class="main_content container">
-          <div class="row">
-              <div class="col-md-7">
-                  <h5 class="text-uppercase ">committed to success</h5>
-                  <h1 class="">We help to grow your business</h1>
-                  <p> </p>
-                  <button class="btn btn-lg btn_style text-uppercase animate_btn">
-                      <a onclick="showPage('services')">our services</a>
-                  </button>
-              </div>
-          </div>
-      </div>		
-  </div>
-</section>
-<!-- Home section end -->
+<!-- Homepage image section start -->
+<div id="demo" class="carousel slide" data-ride="carousel" data-interval="4000">
 
+  <!-- Indicators -->
+  <ul class="carousel-indicators">
+    <li data-target="#demo" data-slide-to="0" class="active"></li>
+    <li data-target="#demo" data-slide-to="1"></li>
+    <li data-target="#demo" data-slide-to="2"></li>
+  </ul>
+  
+  <!-- The slideshow -->
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="img/image1.jpg" alt="image 1" width="800" height="400">
+    </div>
+    <div class="carousel-item">
+      <img src="img/image2.jpg" alt="image 2" width="800" height="400">
+    </div>
+    <div class="carousel-item">
+      <img src="img/image3.jpg" alt="image 3" width="800" height="400">
+    </div>
+  </div>
+  
+  <!-- Left and right controls -->
+  <a class="carousel-control-prev" href="#demo" data-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </a>
+  <a class="carousel-control-next" href="#demo" data-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </a>
+</div>
+
+<!-- Homepage image section end -->
+
+<!-- Card section start -->
+<div class="container mt-5">
+  <div class="card">
+    <div class="row no-gutters">
+      <div class="col-md-4">
+        <img src="img/pngs1.png" class="card-img" alt="Image on the left">
+      </div>
+      <div class="col-md-8">
+        <div class="card-body">
+          <h5 class="card-title"></h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="container mt-5">
+  <div class="card">
+    <div class="row no-gutters">
+      <div class="col-md-8">
+        <div class="card-body">
+          <h5 class="card-title"></h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <img src="img/pngs.png" class="card-img" alt="Image on the right">
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container mt-5">
+  <div class="card">
+    <div class="row no-gutters">
+      <div class="col-md-4">
+        <img src="img/pngs2.png" class="card-img" alt="Image on the left">
+      </div>
+      <div class="col-md-8">
+        <div class="card-body">
+          <h5 class="card-title"></h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Card section end -->
+
+<!-- We Serve at section start -->
+
+  <h2>We Serve at</h2>
+  <div class="main-box">
+    <!-- Sub-box 1 -->
+    <div class="sub-box">EDUCATION</div>
+    <!-- Sub-box 2 -->
+    <div class="sub-box">MANUFACTURING</div>
+    <!-- Sub-box 3 -->
+    <div class="sub-box">BPO & IT</div>
+    <!-- Sub-box 4 -->
+    <div class="sub-box">MANUFACTURING</div>
+    <!-- Sub-box 5 -->
+    <div class="sub-box">HEALTH CARE</div>
+  </div>
+
+
+<!-- We Serve at section end-->     
 
 <!-- Service section start -->
 <section id="services">
@@ -184,6 +284,7 @@
 <!-- What we do section end-->
 
 
+
 <!-- Contact section start -->
 <section id="contact">
   <h2>Contact Us</h2>
@@ -233,9 +334,9 @@
                 <div class="col-md-4">
                   <h4>Company</h4>
                   <ul class="list-unstyled footer-list">
-                    <li><a href="#">About us</a></li>
-                    <li><a href="#">What we do </a></li>
-                    <li><a href="#">Jobs</a></li>
+                    <li><a href="#about">About us</a></li>
+                    <li><a href="#What we do">What we do </a></li>
+                    <li><a href="#Jobs">Jobs</a></li>
                   </ul>
                 </div>
                 <div class="col-md-4">
@@ -282,8 +383,10 @@
             // Show the selected section
             document.getElementById(pageId).classList.add('active');
         }
+       
     </script>
-
+   
+         
 </body>
 
 </html>
